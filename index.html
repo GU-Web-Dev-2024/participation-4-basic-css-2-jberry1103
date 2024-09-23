@@ -5,19 +5,49 @@
     <title>Fall Weather Forecast</title>
     <!-- Link to external stylesheet -->
 
-
+    <link rel="stylesheet" href="style.css">
     <!-- Embedded styles will go here -->
+    <style> 
+    /* internal styles */
+    /* element selectors */
+    h1 {
+        margin: auto;
+        background-color: rgb(255, 187, 0);
+    }
+
+    /*class selector */
+    .forecast {
+    background-color: chocolate;
+    color: white;
+}
+    /*id selector */
+    #table-span {
+    background-color: rgb(205, 133, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    /* hover interaction */
+    button:hover {
+        background-color: rgb(255, 25, 0)
+    }
+    .day:hover {
+        background-color: rgb(255, 145, 0)
+    }
+    </style> 
 
 </head>
 
 <body>
     <h1>Fall Weather Forecast</h1>
     <div class="forecast">
-        <p class="day">Monday: Sunny, 60°F</p>
-        <p class="day">Tuesday: Cloudy, 55°F</p>
-        <p class="day">Wednesday: Rainy, 50°F</p>
+        <!-- inline selector whete text is in the center and font size is 14px for all the classes -->
+        <p class="day" style="text-align: center; font-size: 14px">Monday: Sunny, 60°F</p>
+        <p class="day" style="text-align: center; font-size: 14px" >Tuesday: Cloudy, 55°F</p>
+        <p class="day" style="text-align: center; font-size: 14px">Wednesday: Rainy, 50°F</p>
     </div>
-
+    
+    <button class = "forecast" style="text-align: center;">  I am a button</button>
+    <h2 id = "table-span" style="text-align: center; "> Forecast next week> 
+    <h3 id = "table-span" style="text-align: center; "> It will be sunny next week.</h3> 
     <!-- Example of where inline styles can be added -->
     <footer style="text-align: center;">Last updated: September 22</footer>
 </body>
